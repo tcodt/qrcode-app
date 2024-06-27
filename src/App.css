@@ -2,4 +2,93 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "myFont";
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("/fonts/iranyekan/woff2/IRANYekanWebRegular.woff2");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.container .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container .input-box input {
+  height: 40px;
+  padding: 5px;
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16;
+  font-weight: 600;
+}
+
+.container .input-box input:focus {
+  border: 2px solid #21aeea;
+}
+
+.container .input-box button {
+  height: 40px;
+  padding: 5px;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  background-color: #21aeea;
+  color: #eee;
+  font-size: 16;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container .input-box button:hover {
+  background-color: #197ba5;
+  color: #eee;
+  transition: all 0.3s ease;
+}
+
+.container .extra {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .extra .bg-color {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.container .extra .size {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .download-box a button {
+  height: 40px;
+  padding: 2px 10px;
+  background-color: green;
+  color: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.container .download-box a button:hover {
+  background-color: rgb(6, 78, 6);
+  color: #eee;
+  transition: all 0.3s ease;
 }

@@ -17,11 +17,11 @@ function App() {
           <button>تولید کن</button>
         </div>
         <div className="extra">
-          <div>
+          <div className="bg-color">
             <h5>رنگ پیش زمینه:</h5>
             <input type="color" />
           </div>
-          <div>
+          <div className="size">
             <h5>ابعاد:</h5>
             <input type="range" min={200} max={600} />
           </div>
