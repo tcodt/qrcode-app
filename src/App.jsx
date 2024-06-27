@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [temp, setTemp] = useState("");
   const [word, setWord] = useState("");
-  const [size, setSize] = useState(400);
+  const [size, setSize] = useState(200);
   const [bgColor, setBgColor] = useState("ffff");
   const [qrcode, setQrcode] = useState("");
 
@@ -44,7 +44,7 @@ function App() {
               <input
                 type="range"
                 min={200}
-                max={600}
+                max={300}
                 value={size}
                 onChange={(e) => setSize(e.target.value)}
               />
